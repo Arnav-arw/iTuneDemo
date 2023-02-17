@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		6AA4FDC2299EE08B005D46C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4FDC1299EE08B005D46C3 /* AppDelegate.swift */; };
 		6AA4FDC4299EE08B005D46C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4FDC3299EE08B005D46C3 /* SceneDelegate.swift */; };
-		6AA4FDC6299EE08B005D46C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4FDC5299EE08B005D46C3 /* ViewController.swift */; };
-		6AA4FDC9299EE08B005D46C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AA4FDC7299EE08B005D46C3 /* Main.storyboard */; };
 		6AA4FDCB299EE08D005D46C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA4FDCA299EE08D005D46C3 /* Assets.xcassets */; };
 		6AA4FDCE299EE08D005D46C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AA4FDCC299EE08D005D46C3 /* LaunchScreen.storyboard */; };
+		6AA4FDD9299EE19C005D46C3 /* AdeleResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4FDD8299EE19C005D46C3 /* AdeleResults.swift */; };
+		6AA4FDDE299EE220005D46C3 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4FDDD299EE220005D46C3 /* WebServices.swift */; };
+		6AA4FDE4299EE32E005D46C3 /* iTuneListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4FDE3299EE32E005D46C3 /* iTuneListViewModel.swift */; };
+		6AA4FDE9299EE488005D46C3 /* iTuneListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4FDE8299EE488005D46C3 /* iTuneListVC.swift */; };
+		6AA4FDEB299EE5EF005D46C3 /* iTuneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4FDEA299EE5EF005D46C3 /* iTuneCell.swift */; };
+		6AA4FE1D299F784F005D46C3 /* AdeleResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4FE1C299F784F005D46C3 /* AdeleResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6AA4FDBE299EE08B005D46C3 /* iTuneDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTuneDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA4FDC1299EE08B005D46C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AA4FDC3299EE08B005D46C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6AA4FDC5299EE08B005D46C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6AA4FDC8299EE08B005D46C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6AA4FDCA299EE08D005D46C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AA4FDCD299EE08D005D46C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AA4FDCF299EE08D005D46C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AA4FDD8299EE19C005D46C3 /* AdeleResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdeleResults.swift; sourceTree = "<group>"; };
+		6AA4FDDD299EE220005D46C3 /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
+		6AA4FDE3299EE32E005D46C3 /* iTuneListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTuneListViewModel.swift; sourceTree = "<group>"; };
+		6AA4FDE8299EE488005D46C3 /* iTuneListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTuneListVC.swift; sourceTree = "<group>"; };
+		6AA4FDEA299EE5EF005D46C3 /* iTuneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTuneCell.swift; sourceTree = "<group>"; };
+		6AA4FE1C299F784F005D46C3 /* AdeleResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdeleResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,49 @@
 			children = (
 				6AA4FDC1299EE08B005D46C3 /* AppDelegate.swift */,
 				6AA4FDC3299EE08B005D46C3 /* SceneDelegate.swift */,
-				6AA4FDC5299EE08B005D46C3 /* ViewController.swift */,
-				6AA4FDC7299EE08B005D46C3 /* Main.storyboard */,
+				6AA4FDD5299EE101005D46C3 /* Model */,
+				6AA4FDE7299EE446005D46C3 /* Views */,
+				6AA4FDE2299EE31A005D46C3 /* ViewModel */,
+				6AA4FDDC299EE218005D46C3 /* Services */,
 				6AA4FDCA299EE08D005D46C3 /* Assets.xcassets */,
 				6AA4FDCC299EE08D005D46C3 /* LaunchScreen.storyboard */,
 				6AA4FDCF299EE08D005D46C3 /* Info.plist */,
 			);
 			path = iTuneDemo;
+			sourceTree = "<group>";
+		};
+		6AA4FDD5299EE101005D46C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6AA4FDD8299EE19C005D46C3 /* AdeleResults.swift */,
+				6AA4FE1C299F784F005D46C3 /* AdeleResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6AA4FDDC299EE218005D46C3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6AA4FDDD299EE220005D46C3 /* WebServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6AA4FDE2299EE31A005D46C3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6AA4FDE3299EE32E005D46C3 /* iTuneListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6AA4FDE7299EE446005D46C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6AA4FDE8299EE488005D46C3 /* iTuneListVC.swift */,
+				6AA4FDEA299EE5EF005D46C3 /* iTuneCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +171,6 @@
 			files = (
 				6AA4FDCE299EE08D005D46C3 /* LaunchScreen.storyboard in Resources */,
 				6AA4FDCB299EE08D005D46C3 /* Assets.xcassets in Resources */,
-				6AA4FDC9299EE08B005D46C3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +181,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AA4FDC6299EE08B005D46C3 /* ViewController.swift in Sources */,
 				6AA4FDC2299EE08B005D46C3 /* AppDelegate.swift in Sources */,
+				6AA4FDE4299EE32E005D46C3 /* iTuneListViewModel.swift in Sources */,
+				6AA4FDDE299EE220005D46C3 /* WebServices.swift in Sources */,
 				6AA4FDC4299EE08B005D46C3 /* SceneDelegate.swift in Sources */,
+				6AA4FDD9299EE19C005D46C3 /* AdeleResults.swift in Sources */,
+				6AA4FDEB299EE5EF005D46C3 /* iTuneCell.swift in Sources */,
+				6AA4FE1D299F784F005D46C3 /* AdeleResult.swift in Sources */,
+				6AA4FDE9299EE488005D46C3 /* iTuneListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6AA4FDC7299EE08B005D46C3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6AA4FDC8299EE08B005D46C3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6AA4FDCC299EE08D005D46C3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +332,6 @@
 				INFOPLIST_FILE = iTuneDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +359,6 @@
 				INFOPLIST_FILE = iTuneDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
