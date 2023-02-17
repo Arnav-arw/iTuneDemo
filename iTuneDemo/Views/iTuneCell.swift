@@ -34,6 +34,8 @@ class iTuneCell: UITableViewCell {
     lazy var descLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 9)
+        label.numberOfLines = 3
+        label.lineBreakMode = .byWordWrapping
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -43,25 +45,25 @@ class iTuneCell: UITableViewCell {
         // Title
         titleLabel.text = artist.artistName
         contentView.addSubview(titleLabel)
-        titleLabel.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        titleLabel.widthAnchor.constraint(equalToConstant: 300).isActive = true
         titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20).isActive = true
         titleLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
         
 //        // Subtitle
-//        subTitleLabel.text = artist.collectionName
-//        contentView.addSubview(subTitleLabel)
-//        subTitleLabel.widthAnchor.constraint(equalTo: titleLabel.widthAnchor).isActive = true
-//        subTitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor).isActive = true
-//        subTitleLabel.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor).isActive = true
-//
+        subTitleLabel.text = artist.collectionName
+        contentView.addSubview(subTitleLabel)
+        subTitleLabel.widthAnchor.constraint(equalTo: titleLabel.widthAnchor).isActive = true
+        subTitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor).isActive = true
+        subTitleLabel.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor).isActive = true
+
 //        // Desc
-//        descLabel.text = iTune.longDescription
-//        contentView.addSubview(descLabel)
-//        descLabel.widthAnchor.constraint(equalTo: subTitleLabel.widthAnchor).isActive = true
-//        descLabel.topAnchor.constraint(equalTo: subTitleLabel.bottomAnchor).isActive = true
-//        descLabel.leadingAnchor.constraint(equalTo: subTitleLabel.leadingAnchor).isActive = true
+        descLabel.text = artist.previewUrl
+        contentView.addSubview(descLabel)
+        descLabel.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        descLabel.topAnchor.constraint(equalTo: subTitleLabel.bottomAnchor).isActive = true
+        descLabel.leadingAnchor.constraint(equalTo: subTitleLabel.leadingAnchor).isActive = true
         
         contentView.backgroundColor = .systemGray
-        
+        contentView.frame.inset(by: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10))
     }
 }

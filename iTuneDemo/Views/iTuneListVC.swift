@@ -28,6 +28,14 @@ class iTuneListVC: UITableViewController {
         iTuneVM.artists.count
     }
     
+    override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+       return 20
+   }
+
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "iTuneCell", for: indexPath) as? iTuneCell else {
             fatalError("ituneCell not found")

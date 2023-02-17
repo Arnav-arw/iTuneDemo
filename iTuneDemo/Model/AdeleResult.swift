@@ -8,7 +8,7 @@
 import Foundation
 
 struct AdeleResult: Codable {
-    let artistName: String
-//    let collectionName: String
-//    let longDescription: String
+    var artistName: String
+    var collectionName: String
+    var previewUrl: String
 }

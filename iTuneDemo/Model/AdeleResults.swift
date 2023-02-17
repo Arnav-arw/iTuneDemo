@@ -8,5 +8,5 @@
 import Foundation
 
 struct AdeleResults: Codable {
-    let results: [AdeleResult]
+    var results: [AdeleResult]
 }

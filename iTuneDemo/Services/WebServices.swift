@@ -10,7 +10,7 @@ import Foundation
 class WebServices {
     
     func fetchAdeleResults(completion: @escaping ([AdeleResult]?, Error?) -> Void) {
-        guard let url = URL(string: "https://itunes.apple.com/search?term=adele") else {
+        guard let url = URL(string: "https://itunes.apple.com/search?term=adele&entity=song") else {
             completion(nil, NSError(domain: "Invalid URL", code: 0, userInfo: nil))
             return
         }
